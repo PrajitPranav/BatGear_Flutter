@@ -1,0 +1,42 @@
+name: batgear_app
+description: Bat Gear Android App
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^8.2.0     # Raleway, Poppins
+  http: ^1.2.0             # Backend API calls
+  flutter_animate: ^4.2.0  # Animations
+  video_player: ^2.8.0     # If using video backgrounds
+  shared_preferences: ^2.2.0  # Garage local storage
+  image_picker: ^1.0.0        # Car photo picker
+  uuid: ^4.3.0                # Unique car IDs
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/videos/
+    - templates/BMW.mp4
+    - templates/bmw_home.mp4
+    - templates/login.mp4
+
+
